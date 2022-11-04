@@ -1,0 +1,70 @@
+@import url('./layout.css');
+
+article {
+    width: 200px;
+    padding: 1em;
+    font-size: small;
+    float:left;
+}
+
+article img {
+   width: 100%;
+}
+
+#content{
+   display: flex;
+}
+
+aside{
+    border: 1px solid black;
+    width: 30%;
+    order: 1;
+    padding:1em;
+    margin: 2em;
+}
+
+aside h2{
+    padding-bottom:1em;
+    font-size: 40px;
+}
+aside li {
+    padding:1rem;
+}
+
+aside > ul> li:nth-of-type(even) {
+    background-color: #333;
+    color:#fff;
+}
+
+aside > nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+body > footer {
+    height: 10%;/*1920x1080 px width x height */
+    background: url(../images/scott-webb-UjupleczBOY-unsplash.jpg);
+    background-size: cover;
+    background-position:
+    top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ /*   gap: 1em;*/
+    color: #2c3e50;/*#2c3e50 is midnight blue*/
+    width:auto;
+}
+
+body > footer ul{
+    display: flex;
+    justify-content:
+    space-around;
+}
+
+body > footer p{
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   font-size: 40px;
+   font-weight: bold;
+}
